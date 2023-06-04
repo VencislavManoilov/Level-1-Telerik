@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.9 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Play 2048 Game Online</title>
+	<meta name="description" content="2048 is an easy-to-play number puzzle game. To play, just combine the numbers and try to reach the 2048 tile!" />
+	<link rel="canonical" href="https://play2048.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Play 2048 Game Online" />
+	<meta property="og:description" content="2048 is an easy-to-play number puzzle game. To play, just combine the numbers and try to reach the 2048 tile!" />
+	<meta property="og:url" content="https://play2048.com/" />
+	<meta property="og:site_name" content="Play 2048" />
+	<meta property="article:modified_time" content="2021-08-20T16:32:15+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://play2048.com/#website","url":"https://play2048.com/","name":"Play 2048","description":"Play the 2048 game online","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://play2048.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://play2048.com/#primaryimage","inLanguage":"en-US","url":"https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp","contentUrl":"https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp","width":225,"height":225},{"@type":"WebPage","@id":"https://play2048.com/#webpage","url":"https://play2048.com/","name":"Play 2048 Game Online","isPartOf":{"@id":"https://play2048.com/#website"},"primaryImageOfPage":{"@id":"https://play2048.com/#primaryimage"},"datePublished":"2021-04-04T15:05:36+00:00","dateModified":"2021-08-20T16:32:15+00:00","description":"2048 is an easy-to-play number puzzle game. To play, just combine the numbers and try to reach the 2048 tile!","breadcrumb":{"@id":"https://play2048.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://play2048.com/"]}]},{"@type":"BreadcrumbList","@id":"https://play2048.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//i1.wp.com' />
+<link rel='dns-prefetch' href='//i2.wp.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Play 2048 &raquo; Feed" href="https://play2048.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Play 2048 &raquo; Comments Feed" href="https://play2048.com/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v7.18.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=UA-201776725-2"  type="text/javascript" data-cfasync="false" async></script>
+			<script type="text/javascript" data-cfasync="false">
+				var mi_version = '7.18.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+				
+								var disableStr = 'ga-disable-UA-201776725-2';
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					return document.cookie.indexOf( disableStr + '=true' ) > - 1;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					window[disableStr] = true;
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+					window[disableStr] = true;
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+				if ( mi_track_user ) {
+					function __gtagTracker() {dataLayer.push( arguments );}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dZGIzZG' : true,
+						                    });
+					__gtagTracker( 'config', 'UA-201776725-2', {
+						forceSSL:true,link_attribution:true,					} );
+										window.gtag = __gtagTracker;										(
+						function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+										if ( args.hasOwnProperty(arg) && gaMap.hasOwnProperty(arg) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						}
+					)();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+				<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/play2048.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-3093735b252800d5421f019b1de8bad9' href='https://play2048.com/_static/??-eJylkdFOAyEQRX9ISqrVpg/GTzEDjCztsBAG2uzfy1Jttupu0/jGwD0zlzunKHToM/ZZRirW9SxtqaXCZKUqjoxUFPRBkFMJ0iA5D4QrzfxwuhfNHfpZlGAIJQubnLme4XpNxSDLPUuPxgFSbVPJaRErjkkQWtDDyrv+Jl3fpvWU+WlNh/YPlsZxvlRiMQn0Co3osqdnYcGjrLrl7PaYI+iD9MEUqobJHXAGaUGy7PCIaVFxhORA1gzOKnGKOvhZy+ckQpLAjHl0oCS6KuPm/vIu2t1SYr9ajfxHairzF1giBTBTcCRi4CyedjeniJjC/yZZCgroDleb7f1Lmds0d5DQgDFDO7re3iLf20qDdkCCgg18VSxt5rvD+JGv8yh986/rl8fdZrtdb54+AY2fjtg=' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id='elementor-frontend-inline-css'>
+@font-face{font-family:eicons;src:url(https://play2048.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);src:url(https://play2048.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"),url(https://play2048.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"),url(https://play2048.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"),url(https://play2048.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"),url(https://play2048.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");font-weight:400;font-style:normal}
+</style>
+<link rel='stylesheet' id='print-css-284f6d9e307530358d60f7066f90b661' href='https://play2048.com/wp-content/themes/varia/print.css?m=1615256914' type='text/css' media='print' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #1279be;--wp--preset--color--secondary: #ffb302;--wp--preset--color--foreground: #303030;--wp--preset--color--background: #fffcf1;--wp--preset--color--tertiary: #c5c5c5;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 17.3914px;--wp--preset--font-size--normal: 23px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 26.45px;--wp--preset--font-size--huge: 30.4174px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-foreground-color{color: var(--wp--preset--color--foreground) !important;}.has-background-color{color: var(--wp--preset--color--background) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-foreground-background-color{background-color: var(--wp--preset--color--foreground) !important;}.has-background-background-color{background-color: var(--wp--preset--color--background) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-foreground-border-color{border-color: var(--wp--preset--color--foreground) !important;}.has-background-border-color{border-color: var(--wp--preset--color--background) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='hever-fonts-css'  href='https://fonts.googleapis.com/css?family=PT+Sans%3A400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext&#038;display=swap' media='all' />
+<link crossorigin="anonymous" rel='stylesheet' id='olympus-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C300%2C400%2C500%2C700%2C900%2C100i%2C300i%2C400i%2C500i%2C700i%2C900i&#038;display=swap&#038;ver=3.0.3' media='all' />
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link crossorigin="anonymous" rel='stylesheet' id='google-fonts-1-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8' media='all' />
+<link rel='stylesheet' id='google-earlyaccess-2-css'  href='https://fonts.googleapis.com/earlyaccess/opensanshebrew.css?ver=5.8' media='all' />
+<script id='monsterinsights-frontend-script-js-extra'>
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/play2048.com","hash_tracking":"false","ua":"UA-201776725-2"};
+</script>
+<script type='text/javascript'  src='https://play2048.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?m=1626446022'></script>
+<link rel="https://api.w.org/" href="https://play2048.com/wp-json/" /><link rel="alternate" type="application/json" href="https://play2048.com/wp-json/wp/v2/pages/47" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://play2048.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://play2048.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://wp.me/PcXy32-L' />
+<link rel="alternate" type="application/json+oembed" href="https://play2048.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fplay2048.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://play2048.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fplay2048.com%2F&#038;format=xml" />
+<script data-ad-client="ca-pub-9372282236454810" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><style type='text/css'>img#wpstats{display:none}</style>
+		<link rel="amphtml" href="https://play2048.com/?amp">			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		<style type="text/css" id="custom-colors-css">:root,#editor .editor-styles-wrapper{--wp--preset--color--background:#fffcf1;--wp--preset--color--background-low-contrast:#e7e6e4;--wp--preset--color--background-high-contrast:#fff;--wp--preset--color--foreground:#303030;--wp--preset--color--foreground-low-contrast:#4a4a4a;--wp--preset--color--foreground-high-contrast:#161616;--wp--preset--color--primary:#1279be;--wp--preset--color--primary-hover:#b4dffb;--wp--preset--color--primary-dark:#53b5f6;--wp--preset--color--secondary:#ffb302;--wp--preset--color--secondary-hover:#fff;--wp--preset--color--border:#c5c5c5;--wp--preset--color--border-low-contrast:#dedede;--wp--preset--color--border-high-contrast:#ababab}.wp--preset--color--background{background-color:#fffcf1}.wp--preset--color--foreground{color:#303030}.wp--preset--color--primary{color:#1279be}.wp--preset--color--secondary{color:#ffb302}.wp--preset--color--tertiary{color:#c5c5c5}</style>
+<link rel="icon" href="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/cropped-2048-icon.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/cropped-2048-icon.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/cropped-2048-icon.png?fit=180%2C180&#038;ssl=1" />
+<meta name="msapplication-TileImage" content="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/cropped-2048-icon.png?fit=270%2C270&#038;ssl=1" />
+<!-- Your Google Analytics Plugin is missing the tracking ID -->
+	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+		:root {
+--font-base: Roboto;
+--font-headings: Roboto;
+}
+body, #content, .entry-content, .post-content, .page-content, .post-excerpt, .entry-summary, .entry-excerpt, .widget-area, .widget, .sidebar, #sidebar, footer, .footer, #footer, .site-footer {
+font-family: "Roboto";
+ }
+#site-title, .site-title, #site-title a, .site-title a, .entry-title, .entry-title a, h1, h2, h3, h4, h5, h6, .widget-title {
+font-family: "Roboto";
+ }
+	</style>
+	<!-- Fonts Plugin CSS -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="home page-template page-template-elementor_canvas page page-id-47 wp-embed-responsive singular image-filters-enabled mobile-nav-side custom-colors elementor-default elementor-template-canvas elementor-kit-39 elementor-page elementor-page-47">
+			<div data-elementor-type="wp-page" data-elementor-id="47" class="elementor elementor-47" data-elementor-settings="[]">
+							<div class="elementor-section-wrap">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-00e5059 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="00e5059" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a04afd2" data-id="a04afd2" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-897913c elementor-widget elementor-widget-shortcode" data-id="897913c" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-shortcode"><div class="container-2048">
+  <div class="heading">
+    <h1 class="title"><a href="/">2048</a></h1>
+    <div class="scores-container">
+      <div class="score-container">0</div>
+      <div class="best-container">0</div>
+    </div>
+  </div>
+
+  <div class="above-game">
+    <p class="game-intro">Combine the numbers, get to the <strong>2048 tile!</strong></p>
+    <a class="restart-button">New Game</a>
+  </div>
+
+  <div class="game-container">
+    <div class="game-message">
+      <p></p>
+      <div class="lower">
+        <a class="keep-playing-button">Keep going</a>
+        <a class="retry-button">Retry</a>
+      </div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+      <div class="grid-row">
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+        <div class="grid-cell"></div>
+      </div>
+    </div>
+
+    <div class="tile-container">
+
+    </div>
+  </div>
+</div></div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7e0beb1 elementor-hidden-mobile elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e0beb1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe0e84d" data-id="fe0e84d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fff280d elementor-widget__width-auto elementor-absolute elementor-hidden-phone elementor-widget elementor-widget-html" data-id="fff280d" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372282236454810"
+     crossorigin="anonymous"></script>
+<!-- (play2048.com) Ad on Left Side of Page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-9372282236454810"
+     data-ad-slot="8111731337"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6a7c99d elementor-widget__width-auto elementor-absolute elementor-hidden-phone elementor-widget elementor-widget-html" data-id="6a7c99d" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372282236454810"
+     crossorigin="anonymous"></script>
+<!-- (play2048.com) Ad on Right Side of Page -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:160px;height:600px"
+     data-ad-client="ca-pub-9372282236454810"
+     data-ad-slot="2368450068"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3aeb7e3 elementor-hidden-desktop elementor-hidden-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3aeb7e3" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-eeddc19" data-id="eeddc19" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fa57d5f elementor-widget elementor-widget-html" data-id="fa57d5f" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- (play2048.com) Ad Below Game -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9372282236454810"
+     data-ad-slot="1830451565"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f0ea07a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f0ea07a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-35758bf" data-id="35758bf" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c7c47c0 elementor-widget elementor-widget-heading" data-id="c7c47c0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Play 2048 Arcade</h2>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-87125c8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="87125c8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c7e73c8" data-id="c7e73c8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-6d33125 elementor-grid-5 elementor-posts--align-center page-list elementor-grid-mobile-4 elementor-grid-tablet-5 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="6d33125" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;5&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;classic_columns_mobile&quot;:&quot;4&quot;,&quot;classic_masonry&quot;:&quot;yes&quot;,&quot;classic_columns_tablet&quot;:&quot;5&quot;}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+					<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+				<article class="elementor-post elementor-grid-item post-47 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/" >
+			<div class="elementor-post__thumbnail"><img width="225" height="225" src="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3292" data-permalink="https://play2048.com/2048-game/" data-orig-file="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp" data-orig-size="225,225" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2048 Game" data-image-description="" data-image-caption="" data-medium-file="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp" data-large-file="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp" data-lazy-srcset="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp 225w, https://play2048.com/wp-content/uploads/2021/07/2048-Game-150x150.webp?crop=1 150w, https://play2048.com/wp-content/uploads/2021/07/2048-Game-200x200.webp?crop=1 200w" data-lazy-sizes="(max-width: 225px) 100vw, 225px" data-lazy-src="https://play2048.com/wp-content/uploads/2021/07/2048-Game.webp?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/" >
+				2048			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-1062 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/cupcakes/" >
+			<div class="elementor-post__thumbnail"><img width="200" height="200" src="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?fit=200%2C200&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="2716" data-permalink="https://play2048.com/play-2048-game-online/2048-cupcakes-2/" data-orig-file="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2048-Cupcakes" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?fit=200%2C200&amp;ssl=1" data-large-file="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?fit=200%2C200&amp;ssl=1" data-lazy-srcset="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?w=200&amp;ssl=1 200w, https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?resize=150%2C150&amp;ssl=1 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/2048-Cupcakes.png?fit=200%2C200&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/cupcakes/" >
+				2048 Cupcakes			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-2365 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/8k/" >
+			<div class="elementor-post__thumbnail"><img width="530" height="530" src="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?fit=530%2C530&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="2719" data-permalink="https://play2048.com/play-2048-game-online/can-you-reach-8k/" data-orig-file="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?fit=530%2C530&amp;ssl=1" data-orig-size="530,530" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Can You Reach 8K" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?fit=300%2C300&amp;ssl=1" data-large-file="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?fit=530%2C530&amp;ssl=1" data-lazy-srcset="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?w=530&amp;ssl=1 530w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?resize=300%2C300&amp;ssl=1 300w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?resize=150%2C150&amp;ssl=1 150w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?resize=400%2C400&amp;ssl=1 400w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?resize=200%2C200&amp;ssl=1 200w" data-lazy-sizes="(max-width: 530px) 100vw, 530px" data-lazy-src="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Can-You-Reach-8K.jpg?fit=530%2C530&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/8k/" >
+				Can You Reach 8K			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-1552 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/flappy/" >
+			<div class="elementor-post__thumbnail"><img width="740" height="740" src="https://play2048.com/wp-content/uploads/2021/07/Flappy-2048.webp" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3294" data-permalink="https://play2048.com/flappy-2048/" data-orig-file="https://play2048.com/wp-content/uploads/2021/07/Flappy-2048.webp" data-orig-size="740,740" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Flappy 2048" data-image-description="" data-image-caption="" data-medium-file="https://play2048.com/wp-content/uploads/2021/07/Flappy-2048-300x300.webp" data-large-file="https://play2048.com/wp-content/uploads/2021/07/Flappy-2048.webp" data-lazy-srcset="https://play2048.com/wp-content/uploads/2021/07/Flappy-2048.webp 740w, https://play2048.com/wp-content/uploads/2021/07/Flappy-2048-300x300.webp 300w, https://play2048.com/wp-content/uploads/2021/07/Flappy-2048-150x150.webp?crop=1 150w, https://play2048.com/wp-content/uploads/2021/07/Flappy-2048-400x400.webp?crop=1 400w, https://play2048.com/wp-content/uploads/2021/07/Flappy-2048-200x200.webp?crop=1 200w" data-lazy-sizes="(max-width: 740px) 100vw, 740px" data-lazy-src="https://play2048.com/wp-content/uploads/2021/07/Flappy-2048.webp?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/flappy/" >
+				Flappy 2048			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-2812 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/minesweeper/" >
+			<div class="elementor-post__thumbnail"><img width="219" height="219" src="https://play2048.com/wp-content/uploads/2021/07/Minesweeper.webp" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3293" data-permalink="https://play2048.com/minesweeper-2/" data-orig-file="https://play2048.com/wp-content/uploads/2021/07/Minesweeper.webp" data-orig-size="219,219" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Minesweeper" data-image-description="" data-image-caption="" data-medium-file="https://play2048.com/wp-content/uploads/2021/07/Minesweeper.webp" data-large-file="https://play2048.com/wp-content/uploads/2021/07/Minesweeper.webp" data-lazy-srcset="https://play2048.com/wp-content/uploads/2021/07/Minesweeper.webp 219w, https://play2048.com/wp-content/uploads/2021/07/Minesweeper-150x150.webp?crop=1 150w, https://play2048.com/wp-content/uploads/2021/07/Minesweeper-200x200.webp?crop=1 200w" data-lazy-sizes="(max-width: 219px) 100vw, 219px" data-lazy-src="https://play2048.com/wp-content/uploads/2021/07/Minesweeper.webp?is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/minesweeper/" >
+				Mine-sweeper			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-3189 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/tronix-2/" >
+			<div class="elementor-post__thumbnail"><img width="425" height="425" src="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?fit=425%2C425&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3450" data-permalink="https://play2048.com/tronix-2/tronix-2-2/" data-orig-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?fit=425%2C425&amp;ssl=1" data-orig-size="425,425" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Tronix 2" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?fit=300%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?fit=425%2C425&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?w=425&amp;ssl=1 425w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?resize=200%2C200&amp;ssl=1 200w" data-lazy-sizes="(max-width: 425px) 100vw, 425px" data-lazy-src="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Tronix-2.png?fit=425%2C425&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/tronix-2/" >
+				Tronix 2			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-3186 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/chess/" >
+			<div class="elementor-post__thumbnail"><img width="200" height="200" src="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?fit=200%2C200&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3442" data-permalink="https://play2048.com/chess/chess-2/" data-orig-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?fit=200%2C200&amp;ssl=1" data-orig-size="200,200" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="Chess" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?fit=200%2C200&amp;ssl=1" data-large-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?fit=200%2C200&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?w=200&amp;ssl=1 200w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?resize=150%2C150&amp;ssl=1 150w" data-lazy-sizes="(max-width: 200px) 100vw, 200px" data-lazy-src="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Chess.jpg?fit=200%2C200&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/chess/" >
+				Chess			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-3253 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/trezelines/" >
+			<div class="elementor-post__thumbnail"><img width="387" height="387" src="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?fit=387%2C387&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3448" data-permalink="https://play2048.com/trezelines/trezelines-2/" data-orig-file="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?fit=387%2C387&amp;ssl=1" data-orig-size="387,387" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="trezeLines" data-image-description="" data-image-caption="" data-medium-file="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?fit=300%2C300&amp;ssl=1" data-large-file="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?fit=387%2C387&amp;ssl=1" data-lazy-srcset="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?w=387&amp;ssl=1 387w, https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?resize=300%2C300&amp;ssl=1 300w, https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?resize=150%2C150&amp;ssl=1 150w, https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?resize=200%2C200&amp;ssl=1 200w" data-lazy-sizes="(max-width: 387px) 100vw, 387px" data-lazy-src="https://i1.wp.com/play2048.com/wp-content/uploads/2021/07/trezeLines.png?fit=387%2C387&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/trezelines/" >
+				treze-Lines			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-3275 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/hangman/" >
+			<div class="elementor-post__thumbnail"><img width="523" height="523" src="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?fit=523%2C523&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3446" data-permalink="https://play2048.com/hangman/hangman-2/" data-orig-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?fit=523%2C523&amp;ssl=1" data-orig-size="523,523" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Hangman" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?fit=300%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?fit=523%2C523&amp;ssl=1" data-lazy-srcset="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?w=523&amp;ssl=1 523w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?resize=200%2C200&amp;ssl=1 200w" data-lazy-sizes="(max-width: 523px) 100vw, 523px" data-lazy-src="https://i0.wp.com/play2048.com/wp-content/uploads/2021/07/Hangman.png?fit=523%2C523&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/hangman/" >
+				Hangman			</a>
+		</h3>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-3276 page type-page status-publish has-post-thumbnail hentry entry">
+				<a class="elementor-post__thumbnail__link" href="https://play2048.com/fast-math/" >
+			<div class="elementor-post__thumbnail"><img width="543" height="543" src="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?fit=543%2C543&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-attachment-id="3444" data-permalink="https://play2048.com/fast-math/fast-math-2/" data-orig-file="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?fit=543%2C543&amp;ssl=1" data-orig-size="543,543" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Fast Math" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?fit=300%2C300&amp;ssl=1" data-large-file="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?fit=543%2C543&amp;ssl=1" data-lazy-srcset="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?w=543&amp;ssl=1 543w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?resize=300%2C300&amp;ssl=1 300w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?resize=150%2C150&amp;ssl=1 150w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?resize=400%2C400&amp;ssl=1 400w, https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?resize=200%2C200&amp;ssl=1 200w" data-lazy-sizes="(max-width: 543px) 100vw, 543px" data-lazy-src="https://i2.wp.com/play2048.com/wp-content/uploads/2021/07/Fast-Math.png?fit=543%2C543&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></div>
+		</a>
+				<div class="elementor-post__text">
+				<h3 class="elementor-post__title">
+			<a href="https://play2048.com/fast-math/" >
+				Fast Math			</a>
+		</h3>
+				</div>
+				</article>
+				</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-781b306 elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="781b306" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1cae049" data-id="1cae049" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-fc0dad3 elementor-widget elementor-widget-html" data-id="fc0dad3" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372282236454810"
+     crossorigin="anonymous"></script>
+<!-- (play2048.com) Thin Ad Below Play 2048 Arcade -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9372282236454810"
+     data-ad-slot="5342227646"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-848c846 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="848c846" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3984b83" data-id="3984b83" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-53c4478 elementor-widget elementor-widget-heading" data-id="53c4478" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><b>2048</b> is an easy-to-play number puzzle game. This simple but addictive number game was released in 2014, created by Gabriele Cirulli, and based on the 1024 puzzle game. Since its release, it has become a viral hit.</p>		</div>
+				</div>
+				<div class="elementor-element elementor-element-26b5048 elementor-widget elementor-widget-heading" data-id="26b5048" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default"><b>HOW TO PLAY</b>: Use your arrow keys (←, ↑, ↓, →) to move the tiles. Every time you press an arrow key, all tiles will slide. When two tiles of the same number touch, they merge into one. Add them up to reach the final <b>2048 tile</b> and win the game!</p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-9d26ddc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9d26ddc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-665c55b" data-id="665c55b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-c9bbd86 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-nav-menu--indicator-classic elementor-widget elementor-widget-nav-menu" data-id="c9bbd86" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-none"><ul id="menu-1-c9bbd86" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="https://play2048.com/strategies/" class="elementor-item">Strategies</a></li>
+</ul></nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i class="eicon-menu-bar" aria-hidden="true"></i>
+			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-c9bbd86" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-288"><a href="https://play2048.com/strategies/" class="elementor-item">Strategies</a></li>
+</ul></nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-dd6074e" data-id="dd6074e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d24bdd8 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-nav-menu--indicator-classic elementor-widget elementor-widget-nav-menu" data-id="d24bdd8" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-none"><ul id="menu-1-d24bdd8" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2623"><a href="https://freegameco.com/" class="elementor-item">More Games</a></li>
+</ul></nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i class="eicon-menu-bar" aria-hidden="true"></i>
+			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-d24bdd8" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2623"><a href="https://freegameco.com/" class="elementor-item">More Games</a></li>
+</ul></nav>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-161717d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="161717d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4fe809b" data-id="4fe809b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-50a3681 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-nav-menu--indicator-classic elementor-widget elementor-widget-nav-menu" data-id="50a3681" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-none"><ul id="menu-1-50a3681" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3016"><a href="https://freegameco.com/contact/" class="elementor-item">Contact Us</a></li>
+</ul></nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i class="eicon-menu-bar" aria-hidden="true"></i>
+			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-50a3681" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3016"><a href="https://freegameco.com/contact/" class="elementor-item">Contact Us</a></li>
+</ul></nav>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-533a1e9" data-id="533a1e9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-0fc14a1 elementor-nav-menu__align-center elementor-nav-menu--dropdown-none elementor-nav-menu--indicator-classic elementor-widget elementor-widget-nav-menu" data-id="0fc14a1" data-element_type="widget" data-settings="{&quot;layout&quot;:&quot;horizontal&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-text e--animation-none"><ul id="menu-1-0fc14a1" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="https://play2048.com/privacy/" class="elementor-item">Privacy Policy</a></li>
+</ul></nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<i class="eicon-menu-bar" aria-hidden="true"></i>
+			<span class="elementor-screen-only">Menu</span>
+		</div>
+			<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true"><ul id="menu-2-0fc14a1" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-289"><a href="https://play2048.com/privacy/" class="elementor-item">Privacy Policy</a></li>
+</ul></nav>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d0d6d6f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d0d6d6f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cbb5a22" data-id="cbb5a22" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-7500d74 elementor-widget elementor-widget-heading" data-id="7500d74" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<p class="elementor-heading-title elementor-size-default">Copyright ©2021, Play 2048</p>		</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+						</div>
+					</div>
+		<!-- wpcom_wp_footer -->
+<script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202133'></script>
+<link rel='stylesheet' id='all-css-7966c015c7d49459d30aa4f600c27e6b' href='https://play2048.com/_static/??wp-content/uploads/wp-coder/style-4.css,wp-content/plugins/elementor/assets/lib/animations/animations.min.css?m=1629388934' type='text/css' media='all' />
+<script type='text/javascript'  src='https://play2048.com/_static/??-eJxly0EKgzAQheELNY66KHZRepQyxqATk5mQjIq3bwstgl09+HnflowVVscKKSwjcQHvNKGd4UlsoV8oDJAmUeHvVJG48uWy/VMrfRA7FxioKPgjGGSKqCRnqZOLrsCKmfADUn7/8m4YVxp/4BHvzbXturpubu0L65JCfA=='></script>
+<script src='https://play2048.com/wp-content/plugins/jetpack/vendor/automattic/jetpack-lazy-images/src/../dist/intersection-observer.js?ver=1.1.3' id='jetpack-lazy-images-polyfill-intersectionobserver-js'></script>
+<script id='jetpack-lazy-images-js-extra'>
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+</script>
+<script src='https://play2048.com/wp-content/plugins/jetpack/vendor/automattic/jetpack-lazy-images/src/../dist/lazy-images.js?ver=1.1.3' id='jetpack-lazy-images-js'></script>
+<script type='text/javascript'  src='https://play2048.com/wp-includes/js/wp-embed.min.js?m=1609946964'></script>
+<script src='https://play2048.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript'  src='https://play2048.com/_static/??-eJydUu1qwzAMfKElbtMy2h9jjxIUW8nUyB+1ZUrefm5ot0ELSQcGI/nuJOt0CRU5zdlgUqdyzhnjdLsqS0MEwdqSq0/p7RIq7Z2gE5UDezBJNZtmqzZ71ZEzbfA89cS8gNUMKTElWUsAR7aPYHEtYcSp8xBNSy5kaS04GDAukL7EcgtaMohfwg6RzAJEiHEBwl4Dt6mUK+2t7HK4jmEdFEJg0iDk7+79dZpskUhXBponBgfOA7mkkNGW2McqRK+KcShJMXUqWYhSnvJ9aerfzKt6pZ0LdgH0eM3WMTsh+2ztHlQeFf7J7uMMMpX1JjO+/IV5JEJ6nH7GMUc3nU/7sX1vjrvD4bjbfwP2t0Ub'></script>
+<script id='elementor-pro-frontend-js-before'>
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/play2048.com\/wp-admin\/admin-ajax.php","nonce":"ed3c889414","urls":{"assets":"https:\/\/play2048.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/play2048.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src='https://play2048.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.1' id='elementor-pro-frontend-js'></script>
+<script type='text/javascript'  src='https://play2048.com/_static/??-eJyVTcsKwjAQ/CHTRSvSHsRvielSt242MZsQ+vf2EKRHCwMzA/Oo0bggGSVD5DKTKCCj33xIYFUxKzA9odo1BpLN/VTnSbpFTzUaEsdlQoVlw6dgWqEQuJBwF/rrRytFTI0Ol182oWGS904eHZnIcpgbtfLD38+3y9gPw9hfv2l6dBc='></script>
+<script id='elementor-frontend-js-before'>
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.4.2","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"a11y_improvements":true,"e_import_export":true,"landing-pages":true,"elements-color-picker":true,"admin-top-bar":true,"form-submissions":true},"urls":{"assets":"https:\/\/play2048.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":47,"title":"Play%202048%20%E2%80%93%20Play%20the%202048%20game%20online","excerpt":"","featuredImage":"https:\/\/play2048.com\/wp-content\/uploads\/2021\/07\/2048-Game.webp"}};
+</script>
+<script src='https://play2048.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.4.2' id='elementor-frontend-js'></script>
+<script type='text/javascript'  src='https://play2048.com/_static/??-eJx9jEkKgDAMAD9kDS5IexDfUmxwIU1KU/H7etCbeByYmTOZWbggF0h0LBsrIGG8WbJJWcCrYlHYFVJGEh8wmMdQs3oOhFnruHG9a3X+3D5PUcJB+PZTHJuhdZ21rusvEy45nw=='></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<script src='https://stats.wp.com/e-202133.js' defer></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.0',blog:'191508268',post:'47',tz:'-4',srv:'play2048.com'} ]);
+	_stq.push([ 'clickTrackerInit', '191508268', '47' ]);
+</script>
+	</body>
+</html>
+<!--
+	generated in 0.486 seconds
+	78065 bytes batcached for 300 seconds
+-->

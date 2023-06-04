@@ -1,0 +1,536 @@
+// 1. Suzdavame promenlivi
+let
+starX=0,starY=-200,points=0,pole=0,speed=1,bombX=-200,bombY=-200,pole2,live=3,heartX=0,heartY=550,heartX2=50,heartY2=550,heartX3=100,heartY3=550,heartX4=-100,heartY4=510,heartX5=-100,heartY5=510,heartX6=-100,heartY6=510,laserX=-1000,laserY=0,crossX,crossY,gemX=-100,gemY=550,gemX2=-100,gemY2=550,gemX3=-100,gemY3=550,gemX4=-100,gemY4=550,gemX5=-100,gemY5=525,gemX6=-100,gemY6=525,gemX7=-100,gemY7=500,targetX=-100,targetY=541,targetX2=-100,targetY2=541,targetX3=-100,targetY3=541,zoomX=0,zoomY=0,zoomX2=0,zoomY2=0,zoomX3=0,zoomY3=0,zoomX4=0,zoomY4=0,zoomX5=0,zoomY5=0,zoomX6=0,zoomY6=0,zoomX7=0,zoomY7=0,liveX=-1000,liveY=0,pole3,restart=0
+
+
+function update() {
+    // 2. Kodut tuk se izpulnqva 100 puti v sekunda
+    starY=starY+speed
+    bombY=bombY+speed
+    liveY=liveY+speed
+    crossX=mouseX-25
+    crossY=mouseY-25
+    if(points>=10){
+        gemX=550
+        zoomX=zoomX+1
+        zoomY=zoomY+1
+        if(zoomX>=50){
+            zoomX=50
+        }
+        if(zoomY>=50){
+           zoomY=50
+        }
+    }else{
+        gemX=-100
+        zoomX=0
+        zoomY=0
+    }
+    if(points>=25){
+        gemX2=150
+        zoomX2=zoomX2+1
+        zoomY2=zoomY2+1
+        if(zoomX2>=50){
+            zoomX2=50
+        }
+        if(zoomY2>=50){
+            zoomY2=50
+        }
+    }else{
+        gemX2=-100
+        zoomX2=0
+        zoomY2=0
+    }
+    if(points>=50){
+        gemX3=500
+        zoomX3=zoomX3+1
+        zoomY3=zoomY3+1
+        if(zoomX3>=50){
+            zoomX3=50
+        }
+        if(zoomY3>=50){
+            zoomY3=50
+        }
+    }else{
+        gemX3=-100
+        zoomX3=0
+        zoomY3=0
+    }
+    if(points>=75){
+        gemX4=200
+        zoomX4=zoomX4+1
+        zoomY4=zoomY4+1
+        if(zoomX4>=50){
+            zoomX4=50
+        }
+        if(zoomY4>=50){
+            zoomY4=50
+        }
+    }else{
+        gemX4=-100
+        zoomX4=0
+        zoomY4=0
+    }
+    if(points>=100){
+        gemX5=425
+        zoomX5=zoomX5+1
+        zoomY5=zoomY5+1
+        if(zoomX5>=75){
+            zoomX5=75
+        }
+        if(zoomY5>=75){
+            zoomY5=75
+        }
+    }else{
+        gemX5=-100
+        zoomX5=0
+        zoomY5=0
+    }
+    if(points>=150){
+        gemX6=250
+        zoomX6=zoomX6+1
+        zoomY6=zoomY6+1
+        if(zoomX6>=75){
+            zoomX6=75
+        }
+        if(zoomY6>=75){
+            zoomY6=75
+        }
+    }else{
+        gemX6=-100
+        zoomX6=0
+        zoomY6=0
+    }
+    if(points>=200){
+        gemX7=325
+        zoomX7=zoomX7+1
+        zoomY7=zoomY7+1
+        if(zoomX7>=100){
+            zoomX7=100
+        }
+        if(zoomY7>=100){
+            zoomY7=100
+        }
+    }else{
+        gemX7=-100
+        zoomX7=0
+        zoomY7=0
+    }
+    if(live<1){
+        if(restart==0){
+            if(points>=100){
+                console.log("points =", points)
+                console.log("press any button to get 1 hearts for 100 points")
+                restart=1
+            }else{
+                console.log("points =", points)
+                console.log("press any button to restart")
+                restart=1
+            }
+        }
+    }
+    if(live<3){
+        heartX3=-1000
+    }if(live<2){
+        heartX2=-1000
+    }if(live<1){
+        heartX=-1000
+        starX=-1000
+        bombX=-1000
+        laserX=0       
+    }
+    if(live>0){
+        laserX=-1000
+    }
+    if(live>0){
+        heartX=0
+    }
+    if(live>1){
+        heartX2=50
+    }
+    if(live>2){
+        heartX3=100
+    }
+    if(live>3){
+        heartX4=0
+    }else{
+        heartX4=-100
+    }
+    if(live>4){
+        heartX5=50
+    }else{
+        heartX5=-100
+    }
+    if(live>5){
+        heartX6=100
+    }else{
+        heartX6=-100
+    }
+    if(live>6){
+        targetX=150
+        targetX2=160
+        targetX3=170
+    }else{
+        targetX=-100
+        targetX2=-100
+        targetX3=-100
+    }
+    if(starY>800){
+        if(live<3){
+            heartX3=-1000
+        }if(live<2){
+            heartX2=-1000
+        }if(live<1){
+            heartX=-1000
+            starX=-1000
+            bombX=-1000
+        }else{
+            starY=-200
+            bombY=-200
+            liveY=-200
+            pole=randomInteger(3)
+            speed=speed+1
+            pole2=randomInteger(2)
+            live=live-1
+            pole3=randomInteger(100)
+        }
+    }
+    if(liveX==starX){
+        liveX=-1000
+    }
+    if(liveX==bombX){
+        liveX=-1000
+    }
+    if(speed>4){
+        if(live<1){
+            starX=-1000
+            bombX=-1000
+        }else{
+           if(pole<=0){
+                if(pole>=0){
+                    if(pole2<=0){
+                        if(pole2>=0){
+                            bombX=200
+                            if(pole3>=0){
+                                if(pole3<=15){
+                                    if(live>=2){
+                                        if(live<=2){
+                                            liveX=400
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }if(pole3>=0){
+                                if(pole3<=20){
+                                    if(live>=1){
+                                        if(live<=1){
+                                            liveX=400
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }if(pole2<=1){
+                        if(pole2>=1){
+                            bombX=400
+                            if(pole3>=0){
+                                if(pole3<=15){
+                                    if(live>=2){
+                                        if(live<=2){
+                                            liveX=200
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }if(pole3<=20){
+                                if(pole>=0){
+                                    if(live>=1){
+                                        if(live<=1){
+                                            liveX=200
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }if(pole<=1){
+                if(pole>=1){
+                    if(pole2<=0){
+                        if(pole2>=0){
+                            bombX=0
+                            if(pole3<=15){
+                                if(pole3>=0){
+                                    if(live>=2){
+                                        if(live<=2){
+                                            liveX=400
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }if(pole3<=20){
+                                if(pole>=0){
+                                    if(live>=1){
+                                        if(live<=1){
+                                            liveX=400
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }if(pole2<=1){
+                        if(pole2>=1){
+                            bombX=400
+                            if(pole3<=15){
+                                if(pole3>=0){
+                                    if(live>=2){
+                                        if(live<=2){
+                                            liveX=0
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }if(pole3<=20){
+                                if(pole3>=0){
+                                    if(live>=1){
+                                        if(live<=1){
+                                            liveX=0
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }if(pole<=2){
+                if(pole>=2){
+                    if(pole2<=0){
+                        if(pole2>=0){
+                            bombX=0
+                            if(pole3<=15){
+                                if(pole3>=0){
+                                    if(live>=2){
+                                        if(live<=2){
+                                            liveX=200
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }if(pole3<=20){
+                                if(pole3>=0){
+                                    if(live>=1){
+                                        if(live<=1){
+                                            liveX=200
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }if(pole2<=1){
+                        if(pole2>=1){
+                            bombX=200
+                            if(pole3<=15){
+                                if(pole3>=0){
+                                    if(live>=2){
+                                        if(live<=2){
+                                            liveX=0
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }if(pole3<=20){
+                                if(pole3>=0){
+                                    if(live>=1){
+                                        if(live<=1){
+                                            liveX=0
+                                            liveY=-200
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    if(bombY>800){
+        bombY=-200
+    }
+    if(pole<=0){
+        if(pole>=0){
+            starX=0
+        }
+    }
+    if(pole<=1){
+        if(pole>=1){
+            starX=200
+        }
+    }
+    if(pole<=2){
+        if(pole>=2){
+            starX=400
+        }
+    }
+    if(speed>6){
+        speed=6
+    }
+}
+
+function draw() {
+    // 3. Tuk naprogramirai kakvo da se risuva
+    drawImage(backGrass, 0, 0, 600, 600);
+    drawImage(cherry, starX, starY, 200, 200);
+    drawImage(bomb, bombX, bombY, 200, 200);
+    drawImage(heartSmall, liveX, liveY, 200, 200)
+    drawImage(heartSmall, heartX, heartY, 50, 50);
+    drawImage(heartSmall, heartX2, heartY2, 50, 50);
+    drawImage(heartSmall, heartX3, heartY3, 50, 50);
+    drawImage(heartSmall, heartX4, heartY4, 50, 50);
+    drawImage(heartSmall, heartX5, heartY5, 50, 50);
+    drawImage(heartSmall, heartX6, heartY6, 50, 50);
+    drawImage(ballOrTarget, targetX, targetY, 6, 6);
+    drawImage(ballOrTarget, targetX2, targetY2, 6, 6);
+    drawImage(ballOrTarget, targetX3, targetY3, 6, 6);
+    drawImage(crosshairOutline, crossX, crossY, 50, 50);
+    drawImage(gem[3], gemX, gemY, zoomX, zoomY);
+    drawImage(gem[21], gemX2, gemY2, zoomX2, zoomY2);
+    drawImage(gem[2], gemX3, gemY3, zoomX3, zoomY3);
+    drawImage(gem[20], gemX4, gemY4, zoomX4, zoomY4);
+    drawImage(gem[6], gemX5, gemY5, zoomX5, zoomY5);
+    drawImage(gem[30], gemX6, gemY6, zoomX6, zoomY6);
+    drawImage(gem[35], gemX7, gemY7, zoomX7, zoomY7);
+    drawImage(laserRed[2], laserX, laserY, 600, 600);
+}
+
+function keyup(key) {
+    // Pechatai koda na natisnatiq klavish
+    if(live>6){
+        console.log("hearts =", live)
+    }
+    if(live<1){
+        if(points>=100){
+            points=points-100
+            live=live+1
+            speed=1
+            starY=-200
+            bombY=-200
+            liveY=-200
+            liveX=-1000
+            restart=0
+        }else{
+            speed=1
+            starY=-200
+            bombY=-200
+            liveY=-200
+            points=0
+            live=3
+            restart=0
+        }
+    }
+}
+
+function mouseup() {
+    // Pri klik - pokaji koordinatite na mishkata
+    speed=speed+1
+    if(live<1){
+        if(points>=100){
+            console.log("points =", points)
+            console.log("press any button to get 1 hearts for 100 points")
+        }else{
+            console.log("points =", points)
+            console.log("press any button to restart")
+        }
+    }
+    if(live>6){
+        console.log("hearts =", live)
+    }
+    if(mouseY>starY){
+        if(mouseX>starX){
+            if(mouseX<starX+200){
+                if(live<3){
+                    heartX3=-1000
+                }if(live<2){
+                    heartX2=-1000
+                }if(live<1){
+                    heartX=-1000
+                    starX=-1000
+                    bombX=-1000
+                }else{                   
+                    if(mouseY<=200){
+                        points=points+3
+                        console.log("points =", points)
+                        starY=-200
+                        bombY=-200
+                        liveY=-200
+                        pole=randomInteger(3)
+                        pole2=randomInteger(2)
+                        pole3=randomInteger(100)
+                    }if(mouseY>200){
+                        if(mouseY>starY+200){
+                        
+                        }else{
+                            points=points+1
+                            console.log("points =", points)
+                            starY=-200
+                            bombY=-200
+                            liveY=-200
+                            pole=randomInteger(3)
+                            pole2=randomInteger(2)
+                            pole3=randomInteger(100)
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if(mouseY>liveY){
+        if(mouseX>liveX){
+            if(mouseX<liveX+200){
+                if(mouseY<liveY+200){
+                    if(live<3){
+                        heartX3=-1000
+                    }if(live<2){
+                        heartX2=-1000
+                    }if(live<1){
+                        heartX=-1000
+                        starX=-1000
+                        bombX=-1000
+                    }else{
+                        live=live+1
+                        liveX=-1000
+                    }
+                }
+            }
+        }
+    }
+    if(mouseY>bombY){
+        if(mouseX>bombX){
+            if(mouseX<bombX+200){
+                if(mouseY<bombY+200){
+                    if(live<3){
+                        heartX3=-1000
+                    }if(live<2){
+                        heartX2=-1000
+                    }if(live<1){
+                        heartX=-1000
+                        starX=-1000
+                        bombX=-1000
+                    }else{
+                        live=live-1
+                        bombY=-200
+                        starY=-200
+                        liveY=-200
+                        pole=randomInteger(3)
+                        pole2=randomInteger(2)
+                        pole3=randomInteger(100)
+                    }
+                }
+            }
+        }
+    }
+}
